@@ -1,0 +1,33 @@
+<view >
+  <text>{{showtime}}</text>
+</view>
+
+<view class="msgcss" >
+  <text>你好啊</text>
+</view>
+<view wx:for="{{array1}}">{{item}}</view>
+<view wx:for="{{[bangding,4,true,3]}}">{{item}}</view>
+
+<view wx:if="{{view == 'WEBVIEW'}}">WEBVIEW1</view>
+<view wx:elif="{{view == 'APP'}}">APP1</view>
+<view wx:else="Null"> tom 你好</view>
+
+<template name="staffName">
+  <view>
+    FirstName: {{firstName}}, LastName: {{lastName}}
+  </view>
+</template>
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+
+<view>{{a + b}} + {{c}} + d</view>
+
+<view wx:if="{{length > 5}}">{{4+view+"hello"+3+'4'+ view}}</view>
+
+<view id="tapTest" data-hi="WeChat" bindtap="tapName">Click me!</view>
+
+<!--可以写注释，这个和html语法差不多-->
+<view class="msgcss">{{ msg }}</view>
+<button bindtap="clickMe">{{array[1].bangding}}</button>
+

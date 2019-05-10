@@ -28,4 +28,6 @@ App({
     
   } ,
   gloubleData : 'APP全局变量',
+  gloubleData2 : '新增的全局变量',
+
 })

@@ -25,7 +25,9 @@ Page({
     a: 1,
     b: 2,
     c: 3,
-    length : 7
+    length : 7,
+
+    test:"nihaoma"
     },
 
   tapName(event) {

@@ -26,7 +26,6 @@ Page({
     b: 2,
     c: 3,
     length : 7,
-
     test:"nihaoma"
     },
 

@@ -5,9 +5,6 @@
 <view class="msgcss" >
   <text>你好啊</text>
 </view>
-<view wx:for="{{array1}}">{{item}}</view>
-<view wx:for="{{[bangding,4,true,3]}}">{{item}}</view>
-
 <view wx:if="{{view == 'WEBVIEW'}}">WEBVIEW1</view>
 <view wx:elif="{{view == 'APP'}}">APP1</view>
 <view wx:else="Null"> tom 你好</view>
@@ -29,5 +26,9 @@
 
 <!--可以写注释，这个和html语法差不多-->
 <view class="msgcss">{{ msg }}</view>
-<button bindtap="clickMe">{{array[1].bangding}}</button>
+<button bindtap="test">{{array[1].bangding}}</button>
+
+<view class="btn">
+    <button type="primary" size="default" bindtap="showactionsheet">选择国家</button>
+</view>
 
